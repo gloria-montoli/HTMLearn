@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--questo tag aiuta a creare un'esperienza di visualizzazione ottimizzata su dispositivi mobili, consentendo al tuo sito web di adattarsi correttamente alle diverse dimensioni dei dispositivi-->
+        <link href="style.css" rel="stylesheet">
+
+        <title> Learn to Code </title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    
+        <script>
+            /* header and sidenav for mobile*/
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const burgerBtn = document.querySelector('.burger-btn');
+                const navLinks = document.querySelector('.nav-links');
+            
+                 // Adding a click event listener to the burger button
+                burgerBtn.addEventListener('click', function () {
+                    navLinks.classList.toggle('show');
+                });
+                
+            });
+
+            /* section */
+
+                function toggleContent(element) {
+                    element.classList.toggle("expanded");
+        
+                    var content = element.querySelector('.content');
+                    if (element.classList.contains("expanded")) {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    } else {
+                        content.style.maxHeight = null;
+                    }
+                }
+
+
+        </script>
+    </head>
+    
+    <body>
+        <div id="header">  
+            <div class="logo-wrapper"> 
+                <a href="index.html"> <img id="logo" src="IMAGES\LOGO_1.png" alt="Logo" height="130px"> </a> 
+            </div>
+                
+            <nav>
+                <ul class="nav-links">
+                        <li class="close-btn"><a href="page3.html">X</a></li>
+                        <li class="close-btn"><a href="index.html">Home</a></li>
+                        <li><a href="page2.html">Courses</a></li>
+                        <li><a href="page3.html">History</a></li>
+                        <li><a href="https://www.linkedin.com/feed/" target="_blank">Teams</a></li>
+                </ul>
+
+                <div class="burger-btn">&#9776;</div>
+            </nav>
+
+       
+
+        </div>
+
+        <div class="around-section">
+            <h1>Web Evolution</h1>
+
+            <div class="history-img">
+                <img src="IMAGES\HISTORY\WEB-timeline.png" alt="Timeline web">
+            </div>
+        </div>
+
+        <section>
+            <div class="timeline">
+                <div class="timeline-dot"></div>
+                <div class="timeline-item" onclick="toggleContent(this)">
+                    <h3>The WWW Birth – 1989</h3>
+                    <div class="content">
+                        <p>
+                            The internet had its beginnings in 1969, emerging just two months after the historic moon landing with the creation of the prototype Arpanet. 
+                            However, it wasn't until 1989 that Tim Berners-Lee and Robert Cailliau, while at CERN in Geneva, conceptualized a system for sharing scientific papers using HTML and SGML. 
+                            Despite being an ingenious concept, it didn't gain widespread adoption initially. 
+                            In 1991, their unveiling of the first WWW prototype at a Hypertext conference faced little success.
+                        </p>
+                    </div>
+                </div>
+    
+            <div class="timeline-dot"></div>
+                <div class="timeline-item" onclick="toggleContent(this)">
+                    <h3>Netscape and the Browser Wars</h3>
+                    <div class="content">
+                        <p>                            
+                            In 1994, Netscape unveiled Netscape Communicator, a groundbreaking browser with innovative features. 
+                            The following year, Microsoft launched "Internet Explorer," sparking a competition between the two giants, each striving to sway users with updated functionalities like "blinking words" and "scrolling text." 
+                            Authors faced the dilemma of choosing which browser to code in to showcase these effects. By 1998, the browser battle concluded with Internet Explorer emerging as the victor. 
+                            However, newer contenders like Firefox and Chrome have since entered the market, diversifying user choices. 
+                        </p>
+                    </div>
+            </div>
+
+            <div class="timeline-dot"></div>
+                <div class="timeline-item" onclick="toggleContent(this)">
+                    <h3>W3C and Standardization</h3>
+                    <div class="content">
+                        <p>
+                            Tim Berners-Lee spearheaded the creation of W3C, aimed at advancing and standardizing the development of Web technologies. 
+                            Amidst the Netscape and Microsoft rivalry, W3C played a pivotal role by facilitating discussions and reaching agreements to incorporate HTML features introduced by both companies. 
+                            Since then, W3C has taken the helm in defining crucial Web standards like URI, HTTP, CSS, XML, and related technologies. 
+                            Additionally, it has championed Web accessibility, catering to users with disabilities who rely on assistive technologies.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="timeline-dot"></div>
+                <div class="timeline-item" onclick="toggleContent(this)">
+                    <h3>The IE Era and the Second Browser War</h3>
+                    <div class="content">
+                        <p>     
+                            Microsoft released Internet Explorer 6.0 in September 2001, celebrated for its speed, adherence to standards, and strong support. 
+                            However, between 2006 and 2012, only four versions similar to IE 6.0 were launched without substantial innovations or full compliance with W3C guidelines. 
+                            As newer free and open-source browsers emerged in 2004, boasting innovation and better adherence to standards, a browser war ensued. 
+                            IE lost its dominance, retained mainly for website testing by developers. 
+                            Microsoft, focusing less on browser development, declined to join the WHAT working group in 2004, relinquishing leadership. 
+                            Apple, Firefox, and Opera spearheaded discussions on browsers, while in 2008, Google introduced Chrome. By 2012, Chrome surpassed IE in popularity. 
+                            This shift coincided with the rise of browsers on tablets and smartphones, reshaping the landscape.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="timeline-dot"></div>
+                <div class="timeline-item" onclick="toggleContent(this)">
+                    <h3>Evolution to Web 2.0 and Web 3.0</h3>
+                    <div class="content">
+                        <p>
+                            The evolution from Web 2.0 to Web 3.0 marks a transformative journey in the realm of the internet. 
+                            Web 2.0, characterized by user-generated content, social media, and interactive online experiences, facilitated a shift from static web pages to dynamic platforms. 
+                            As technology progressed, Web 3.0 emerged as the next phase, introducing a more intelligent and interconnected web. 
+                            Web 3.0 aims to harness technologies like artificial intelligence, blockchain, and the semantic web to create a decentralized and more personalized online environment. 
+                            It emphasizes data ownership, privacy, and the ability of machines to understand and interpret information. 
+                            This evolution signifies a move towards a more sophisticated, context-aware, and user-centric internet experience, where data is not only shared but also securely managed and utilized in innovative ways.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="timeline-dot"></div>
+                <div class="timeline-item" onclick="toggleContent(this)">
+                    <h3>Current Web Trends (Web 4.0)</h3>
+                    <div class="content">
+                        <p> Progressive Web Apps (PWAs) continue to gain popularity, offering a seamless mobile-like experience on web browsers. 
+                            Dark mode design, providing a visually comfortable interface, has become prevalent across websites and applications. 
+                            Additionally, there's a growing emphasis on web accessibility, ensuring that websites are inclusive and usable for people with disabilities. 
+                            Single Page Applications (SPAs) using frameworks like React and Vue.js are widely adopted for their efficiency in delivering dynamic and responsive user interfaces. 
+                            E-commerce and online services have seen a surge, accelerated by the global shift towards digital interactions. 
+                            Moreover, the rise of WebAssembly enhances web performance by enabling the execution of high-performance languages in the browser.
+                        </p>
+                    </div>
+            </div>
+        
+            </div>
+
+        </section>
+
+        <div class="around-section" id="after-section">
+            <h1>Timeline of Web Technologies</h1>
+
+            <div class="history-img">
+                <img src="IMAGES\HISTORY\html-timeline.png" alt="Timeline html">
+            </div>
+        </div>
+    
+        
+        
+
+        <!-- footer -->
+        <div id="footer_wrapper">
+            <div class="footer_div">
+				<a href="index.html"> <h4>Sign up</h4> </a>
+			</div>
+
+            <div class="footer_div">
+				<div id="social">
+					<div class="social-icon"> <a href="https://www.facebook.com/" target="_blank"> <img src="IMAGES/facebook.png" alt="facebook" height="40px"> </a> </div>
+					<div class="social-icon"> <a href="https://www.instagram.com/" target="_blank"> <img src="IMAGES/instagram.png" alt="instagram" height="40px"> </a> </div>
+					<div class="social-icon"> <a href="https://web.whatsapp.com/" target="_blank"> <img src="IMAGES/whatsapp.png" alt="whatsapp" height="40px"> </a> </div>
+					<div class="social-icon"> <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2F&lang=en&enter_method=mandatory" target="_blank"> <img src="IMAGES/tiktok.png" alt="tiktok" height="40px"> </a> </div>
+				</div>
+			</div>
+			
+            <div class="footer_div">
+				<a href="page2.html"><h4>Learn more about courses</h4></a>
+			</div>
+        </div>
+    
+
+    </body>
+</html>

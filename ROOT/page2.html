@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--questo tag aiuta a creare un'esperienza di visualizzazione ottimizzata su dispositivi mobili, consentendo al tuo sito web di adattarsi correttamente alle diverse dimensioni dei dispositivi-->
+        <link href="style.css" rel="stylesheet">
+
+        <title> Learn to Code </title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    
+        <script>
+            /* header and sidenav for mobile*/
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const burgerBtn = document.querySelector('.burger-btn');
+                const navLinks = document.querySelector('.nav-links');
+            
+                 // Adding a click event listener to the burger button
+                burgerBtn.addEventListener('click', function () {
+                    navLinks.classList.toggle('show');
+                });
+                
+            });
+
+
+        </script>
+    </head>
+    
+    <body>
+        <div id="header">  
+            <div class="logo-wrapper"> 
+                <a href="index.html"> <img id="logo" src="IMAGES\LOGO_1.png" alt="Logo" height="130px"> </a> 
+            </div>
+                
+            <nav>
+                <ul class="nav-links">
+                        <li class="close-btn"><a href="page2.html">X</a></li>
+                        <li class="close-btn"><a href="index.html">Home</a></li>
+                        <li><a href="page2.html">Courses</a></li>
+                        <li><a href="page3.html">History</a></li>
+                        <li><a href="https://www.linkedin.com/feed/" target="_blank">Teams</a></li>
+                </ul>
+
+                <div class="burger-btn">&#9776;</div>
+            </nav>
+
+       
+
+        </div>
+
+
+        <!--content-->
+        <div id="courses-container">
+            <div id="cover-image2">    
+                <img src="IMAGES\COURSES\COVER PAGE 2 - APP.png" alt="Application"> 
+            </div>
+        </div>
+
+        <div id="content-page2">
+            <h3>Start to learn on APP</h3>
+        </div>
+
+        <div class="main-content">
+            <article class="lesson">
+                <h2>HTML Basics</h2>
+                <p>Learn the fundamentals of HTML and create your first web page.</p>
+                <a href="#">Start Lesson</a>
+            </article>
+    
+            <article class="lesson">
+                <h2>HTML Forms</h2>
+                <p>Explore how to create forms and gather user input with HTML.</p>
+                <a href="#">Start Lesson</a>
+            </article>
+        </div>
+        
+
+        <!-- footer -->
+        <div id="footer_wrapper">
+            <div class="footer_div">
+				<a href="index.html"> <h4>Sign up</h4> </a>
+			</div>
+
+            <div class="footer_div">
+				<div id="social">
+					<div class="social-icon"> <a href="https://www.facebook.com/" target="_blank"> 
+                        <img src="IMAGES/facebook.png" alt="facebook" height="40px"> </a> </div>
+					<div class="social-icon"> <a href="https://www.instagram.com/" target="_blank"> 
+                        <img src="IMAGES/instagram.png" alt="instagram" height="40px"> </a> </div>
+					<div class="social-icon"> <a href="https://web.whatsapp.com/" target="_blank"> 
+                        <img src="IMAGES/whatsapp.png" alt="whatsapp" height="40px"> </a> </div>
+					<div class="social-icon"> <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2F&lang=en&enter_method=mandatory" target="_blank"> 
+                        <img src="IMAGES/tiktok.png" alt="tiktok" height="40px"> </a> </div>
+				</div>
+			</div>
+			
+            <div class="footer_div">
+				<a href="page2.html"><h4>Learn more about courses</h4></a>
+			</div>
+        </div>
+    
+
+    </body>
+</html>

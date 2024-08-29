@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--questo tag aiuta a creare un'esperienza di visualizzazione ottimizzata su dispositivi mobili, consentendo al tuo sito web di adattarsi correttamente alle diverse dimensioni dei dispositivi-->
+        <link href="style.css" rel="stylesheet">
+
+        <title> Learn to Code </title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,500;0,900;1,400&display=swap" rel="stylesheet">
+    
+        <script>
+            /* header and sidenav for mobile*/
+            document.addEventListener('DOMContentLoaded', function () {
+                const burgerBtn = document.querySelector('.burger-btn');
+                const navLinks = document.querySelector('.nav-links');
+            
+                 // Adding a click event listener to the burger button
+                burgerBtn.addEventListener('click', function () {
+                    navLinks.classList.toggle('show');
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div id="header">  
+            <div class="logo-wrapper"> 
+                <a href="index.html"> <img id="logo" src="IMAGES\LOGO_1.png" alt="Logo" height="130px"> </a> 
+            </div>
+                
+            <nav>
+                <ul class="nav-links">
+                        <li class="close-btn"><a href="index.html">X</a></li>
+                        <li><a href="page2.html">Courses</a></li>
+                        <li><a href="page3.html">History</a></li>
+                        <li><a href="https://www.linkedin.com/feed/" target="_blank">Teams</a></li>
+                </ul>
+
+                <div class="burger-btn">&#9776;</div>
+            </nav>
+
+        </div>
+
+                    
+        <!--content-->
+        <div id="content_1">
+
+            <!-- colonna sinistra-->
+            <div class="col-sx">    
+                    <img src="IMAGES\HOME\python-cover.gif" alt="Developer animation"> 
+            </div>
+            
+            <!--colonna destra-->
+            <div class="col-dx">
+                    <h1 id="title">The best way to learn to code on the go</h1>
+                    <h2 id="subtitle"> Courses designed by experts with real-world practice </h2>
+
+                    <!-- Modulo di login -->
+                    <div class="cover-logging">
+                        <form action="/action_page.php">
+                            <h2>Login in your Account</h2>
+                                                      
+                            <div class="col-loggin">
+                                <p>Sign in manually:</p>
+                            
+                                <input type="text" name="username" placeholder="Username" required>
+                                <input type="password" name="password" placeholder="Password" required>
+                                <input type="submit" value="Login">
+                                
+                            </div>
+                        </form>
+                    </div>
+
+            </div>
+        
+        </div>
+    
+    
+
+        <div id="content_2">
+            <div class="container-text">                
+                <h3>Introduction to HTML</h3>
+
+                <p> HTML is at the core of every web page. 
+                    It’s beginner-friendly and knowing the basics is useful for everyone who works in digital design, marketing, content and more. 
+                    If you’re interested in front-end web development, this course is a great place to start! You don’t need any previous coding experience, and we have plenty of other courses for you to deepen your knowledge once you’re finished, including CSS and JavaScript.
+                </p>
+                
+            </div>
+        </div>
+
+        <div id="content_4" class="launching-cards"> 
+            <div class="launching-cards-wrapper">
+                <div class="card">
+                    <a herf="https://www.unibo.it/it/"> 
+                        <img src="IMAGES\HOME\best-quality.png" alt height="133" width="133" loading="lazy">
+                        <div class="title">
+                            <h3> Get Proof </h3>
+                        </div>
+                        <p> Earn a certificate to validate your newly acquired skills. Post it on social for others to see.
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a herf="https://www.unibo.it/it/"> 
+                        <img src="IMAGES\HOME\best-value.png" alt height="133" width="133" loading="lazy">
+                        <div class="title">
+                            <h3> More than 20 courses </h3>
+                        </div>
+                        <p> From HTML, through data, to web dev. We got everything you need.
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a herf="https://www.unibo.it/it/"> 
+                        <img src="IMAGES\HOME\featured.png" alt height="133" width="133" loading="lazy">
+                        <div class="title">
+                            <h3> Bite-sized </h3>
+                        </div>
+                        <p> Go step-by-step through our unique courses. Assess what you've learned with in-lesson quizzes, and gradually advance your skills with practice.
+                        </p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a herf="https://www.unibo.it/it/"> 
+                        <img src="IMAGES\HOME\easy-maintenance.png" alt height="133" width="133" loading="lazy">
+                        <div class="title">
+                            <h3> Tailored to you </h3>
+                        </div>
+                        <p> No matter your experience level, you'll be writing real, functional code within minutes of starting your first course.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    
+       
+
+        <div id="content_5" >
+            <div class="learning-on-the-go">
+
+                <!-- colonna sinistra-->
+                <div class="col-sx" id="content_5_sx">
+                    <img src="IMAGES\HOME\smartphone.png" alt >
+                </div>
+
+                <!--colonna destra-->
+                <div class="col-dx">
+                    <h3>Learning on the go</h3>
+                    <h4>Learn on the web or on the go. <br> HTMLearn is always ready for you and you'll never lose your place.</h4>
+
+                </div>
+
+                <a href="https://appinventor.mit.edu/">Get the QRcode</a>
+
+            </div>
+        </div>
+
+        
+
+        
+    <!-- footer -->
+        <div id="footer_wrapper">
+            <div class="footer_div">
+				<a href="index.html"> <h4>Sign up</h4> </a>
+			</div>
+
+            <div class="footer_div">
+				<div id="social">
+					<div class="social-icon"> <a href="https://www.facebook.com/" target="_blank"> <img src="IMAGES/facebook.png" alt="facebook" height="40px"> </a> </div>
+					<div class="social-icon"> <a href="https://www.instagram.com/" target="_blank"> <img src="IMAGES/instagram.png" alt="instagram" height="40px"> </a> </div>
+					<div class="social-icon"> <a href="https://web.whatsapp.com/" target="_blank"> <img src="IMAGES/whatsapp.png" alt="whatsapp" height="40px"> </a> </div>
+					<div class="social-icon"> <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2F&lang=en&enter_method=mandatory" target="_blank"> <img src="IMAGES/tiktok.png" alt="tiktok" height="40px"> </a> </div>
+				</div>
+			</div>
+			
+            <div class="footer_div">
+				<a href="page2.html"><h4>Learn more about courses</h4></a>
+			</div>
+        </div>
+    
+      
+    
+</body>
+</html>
