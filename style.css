@@ -428,3 +428,33 @@ div {
         height: auto;
     }
 }
+
+/*FOOTER*/
+
+#footer_wrapper {
+    display: flex;     justify-content: center;     align-items: center;
+    width: 100%;     min-height: 100px;
+    background-color: rgb(187,205,249);     box-sizing: border-box;}
+
+.footer_div {     width: 33.33%;    text-align: center; }
+
+.footer_div h4 {    margin: 0;     transition: color 0.2s;}
+
+.footer_div a {    text-decoration: none;    color: rgb(3, 43, 67); }
+
+.footer_div h4:hover {    color: rgb(255,206,0); }
+
+#social {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.social-icon {
+    position: relative;
+    transition: top 0.2s;
+}
+
+.social-icon:hover {
+    top: 2px;
+}
